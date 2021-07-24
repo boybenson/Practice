@@ -1,0 +1,17 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "This is a repo for my day to day code practice",
+  "main": "server.js",
+  "repository": "https://github.com/boybenson/practice.git",
+  "author": "boybenson <ybenson96@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts":{
+    "dev":"nodemon server.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
