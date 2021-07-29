@@ -1,9 +1,14 @@
-let benson = {
-    school:'Legon',
-    level:300,
-    programme:'Computer Science'
+let girl = {
+    name:"francisca",
+    age:14,
+    girl:true
 }
 
-let descriptor = Object.getOwnPropertyDescriptor(benson, 'programme')
+let boy = {
+    age:20,
+    boy:true,
+}
 
-console.log(descriptor);
+boy.__proto__ = girl
+
+console.log(boy.name)
