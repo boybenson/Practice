@@ -7,11 +7,15 @@
   "author": "boybenson <ybenson96@gmail.com>",
   "license": "MIT",
   "private": false,
-  "scripts":{
-    "dev":"nodemon server.js"
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "jest": "27.0.6",
+    "nodemon": "2.0.12"
   }
 }

@@ -1,14 +1,8 @@
-let girl = {
-    name:"francisca",
-    age:14,
-    girl:true
+const axios = require('axios')
+
+function fetchData() {
+    const data = axios.get('https://jsonplaceholder.typicode.com/todos/')
+    return data     
 }
 
-let boy = {
-    age:20,
-    boy:true,
-}
-
-boy.__proto__ = girl
-
-console.log(boy.name)
+module.exports = fetchData;
