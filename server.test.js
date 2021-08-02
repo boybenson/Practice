@@ -1,13 +1,11 @@
 const fetchData = require('./server.js')
 
-
-test('type of data should be an object', () => {
-  return fetchData().then(({data}) => {
-    expect(data).toContainEqual({
+test('fetch data from json placeholder', async () => {
+  const data = await fetchData()
+  expect(data).toEqual(  {
     "userId": 1,
-    "id": 4,
-    "title": "et porro tempora",
-    "completed": true
+    "id": 1,
+    "title": "delectus aut autem",
+    "completed": false
   },)
-  })
 })
