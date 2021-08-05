@@ -1,8 +1,11 @@
-const axios = require('axios')
+let genFunction = function* () {
+  console.log("hey");
+  yield { name: "Yeboah Benson", role: "intern" };
+  yield 2;
+  yield { name: "Mahali Asmah", role: "Snr Engineer" };
+  yield 3;
+};
 
-let fetchData = async () => {
-    let { data } = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
-    return data;
-}
+let genObj = genFunction();
 
-module.exports = fetchData;
+console.log(genObj.next());
