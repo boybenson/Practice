@@ -1,11 +1,7 @@
-const fetchData = require('./server.js')
+const { sumNumbers } = require("./server");
 
-test('fetch data from json placeholder', async () => {
-  const data = await fetchData()
-  expect(data).toEqual(  {
-    "userId": 1,
-    "id": 1,
-    "title": "delectus aut autem",
-    "completed": false
-  },)
-})
+test("should sum of numbers", () => {
+  let actual = sumNumbers(3, 5);
+  let expected = 8;
+  expect(actual).toBe(expected);
+});

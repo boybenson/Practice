@@ -1,11 +1,5 @@
-let genFunction = function* () {
-  console.log("hey");
-  yield { name: "Yeboah Benson", role: "intern" };
-  yield 2;
-  yield { name: "Mahali Asmah", role: "Snr Engineer" };
-  yield 3;
+const sumNumbers = (a, b) => {
+  return a + b;
 };
 
-let genObj = genFunction();
-
-console.log(genObj.next());
+module.exports = { sumNumbers };
