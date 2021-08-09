@@ -1,5 +1,5 @@
 const sumNumbers = (a, b) => {
-  return b + a;
+  return b + b;
 };
 
 module.exports = { sumNumbers };
